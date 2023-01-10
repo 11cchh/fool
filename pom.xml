@@ -14,6 +14,8 @@
         <module>dubbo-echo/dubbo-echo-api</module>
         <module>dubbo-echo/dubbo-echo-consumer</module>
         <module>dubbo-echo/dubbo-echo-provider</module>
+        <module>elasticsearch-demo</module>
+        <module>spring-demo</module>
     </modules>
 
     <packaging>pom</packaging>

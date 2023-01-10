@@ -10,17 +10,22 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 
+import java.util.concurrent.TimeUnit;
+
 /**
  * @Author Faye
  * @Date 2022/12/7 11:19
  */
 public class AnnotationConsumer {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws InterruptedException {
         AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext(ConsumerConfiguration.class);
         context.start();
         EchoConsumer echoConsumer = context.getBean(EchoConsumer.class);
-        String message = echoConsumer.echo("hello world!");
-        System.out.println("result: " + message);
+        while (true) {
+            TimeUnit.SECONDS.sleep(5);
+            String message = echoConsumer.echo("hello world!");
+            System.out.println("echo result: " + message);
+        }
     }
 
     @Configuration
