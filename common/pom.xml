@@ -18,7 +18,7 @@
         <maven.compiler.target>8</maven.compiler.target>
         <hutool-all>5.8.3</hutool-all>
         <fastjson.version>2.0.8</fastjson.version>
-        <spring.boot.version>2.3.11.RELEASE</spring.boot.version>
+        <spring.boot.version>2.7.3</spring.boot.version>
         <boot.druid>1.1.18</boot.druid>
         <mybatis-plus-boot-starter>3.4.3</mybatis-plus-boot-starter>
         <mybatis-plus-generator>3.5.1</mybatis-plus-generator>
@@ -82,7 +82,7 @@
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-test</artifactId>
-            <version>6.0.2</version>
+            <version>5.3.25</version>
         </dependency>
     </dependencies>
 
