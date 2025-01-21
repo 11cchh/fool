@@ -16,6 +16,7 @@
         <module>dubbo-echo/dubbo-echo-provider</module>
         <module>elasticsearch-demo</module>
         <module>rabbitmq-demo</module>
+        <module>db-router-spring-boot-starter</module>
     </modules>
 
     <packaging>pom</packaging>
