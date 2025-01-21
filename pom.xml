@@ -8,14 +8,14 @@
     <artifactId>fool</artifactId>
     <version>1.0-SNAPSHOT</version>
     <modules>
-        <module>common</module>
+        <module>spring-boot-common</module>
         <module>log-record</module>
         <module>dubbo-echo</module>
         <module>dubbo-echo/dubbo-echo-api</module>
         <module>dubbo-echo/dubbo-echo-consumer</module>
         <module>dubbo-echo/dubbo-echo-provider</module>
         <module>elasticsearch-demo</module>
-        <module>spring-demo</module>
+        <module>rabbitmq-demo</module>
     </modules>
 
     <packaging>pom</packaging>

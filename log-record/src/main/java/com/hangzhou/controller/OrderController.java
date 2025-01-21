@@ -5,6 +5,7 @@ import com.hangzhou.pojo.UpdateOrder;
 import com.hangzhou.service.OrderService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -18,13 +19,13 @@ public class OrderController {
     @Autowired
     private OrderService orderService;
 
-    @GetMapping("save")
+    @PostMapping("save")
     public SaveOrder saveOrder() {
         SaveOrder saveOrder = new SaveOrder();
         saveOrder.setId(1L);
         orderService.saveOrder(saveOrder);
         // 主业务发生异常时，切面逻辑无法回滚
-//        int i = 10/0;
+        int i = 10/0;
         return saveOrder;
     }
 
@@ -34,5 +35,10 @@ public class OrderController {
         updateOrder.setOrderId(2L);
         orderService.updateOrder(updateOrder);
         return updateOrder;
+    }
+
+    @GetMapping("test")
+    public String test() {
+        return "json";
     }
 }

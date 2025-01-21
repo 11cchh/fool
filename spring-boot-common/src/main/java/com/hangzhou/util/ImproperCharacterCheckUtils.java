@@ -6,6 +6,7 @@ import com.hangzhou.exception.BizException;
 
 /**
  * 非法字符校验工具类
+ *
  * @Author: Faye
  * @Data: 2022/9/14 11:16
  */
@@ -14,6 +15,7 @@ public class ImproperCharacterCheckUtils {
 
     /**
      * 非法字符：\ / * ? : ｜
+     *
      * @param str 字符串
      */
     public static void check(String str) {
