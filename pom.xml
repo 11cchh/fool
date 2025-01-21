@@ -17,6 +17,7 @@
         <module>elasticsearch-demo</module>
         <module>rabbitmq-demo</module>
         <module>db-router-spring-boot-starter</module>
+        <module>business-demo</module>
     </modules>
 
     <packaging>pom</packaging>
