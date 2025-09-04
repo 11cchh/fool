@@ -5,6 +5,7 @@ import java.util.regex.Pattern;
 
 /**
  * 弱密码检测工具类
+ *
  * @Author: Faye
  * @Data: 2022/9/14 11:16
  */
